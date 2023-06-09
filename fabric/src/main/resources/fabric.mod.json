@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "antibat",
+  "version": "${version}",
+
+  "name": "antibat",
+  "description": "Disable the annoying and useless bats from spawning",
+  "authors": [],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {},
+  "mixins": [
+    "antibat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": ">=1.19.2"
+  }
+}
