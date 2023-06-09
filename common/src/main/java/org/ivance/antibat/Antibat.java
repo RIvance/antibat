@@ -7,7 +7,6 @@ public class Antibat {
 	public static final String MOD_ID = "antibat";
 
 	public static void init() {
-		// get logger
 		Logger logger = (Logger) LogManager.getLogger();
 		logger.info("Antibat enabled");
 	}
