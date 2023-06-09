@@ -12,7 +12,7 @@ p.s. There may be already a mod that does this,
 but I couldn't find one that works on fabric 1.19 
 and above. So I made my own. 
 (This is really a simple mod. 
-I spend more time writing this README file that 
+I spend more time writing this README file than 
 the mod itself lol.)
 
 ## Installation
