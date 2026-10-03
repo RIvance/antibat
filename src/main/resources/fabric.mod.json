@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "antibat",
+  "version": "${version}",
+  "name": "Anti-Bats",
+  "description": "Prevent bats from naturally spawning.",
+  "authors": ["Ivance"],
+  "contact": {
+    "sources": "https://github.com/RIvance/antibat",
+    "issues": "https://github.com/RIvance/antibat/issues"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "mixins": ["antibat.mixins.json"],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=25"
+  }
+}

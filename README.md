@@ -1,20 +1,38 @@
 # Anti-Bats
 
-Get rid of those annoying and useless bats!
-
-This mod only disable bats from naturally spawning. 
-It does not remove them from the world if they are already there. 
-It also does not prevent them from being spawned by mob spawner, 
-spawning eggs and commands. So don't worry if your command blocks 
-and data packs works depend on bats.
-
-p.s. There may be already a mod that does this,
-but I couldn't find one that works on fabric 1.19 
-and above. So I made my own. 
-(This is really a simple mod. 
-I spend more time writing this README file than 
-the mod itself lol.)
+A Fabric mod for Minecraft **26.2** that prevents bats from naturally spawning,
+including during chunk generation. Existing bats are left alone. Mob spawners,
+spawn eggs, and commands retain their normal behavior.
 
 ## Installation
 
-Put the jar file into your `mods` folder.
+Install Fabric Loader **0.19.5 or newer** for Minecraft **26.2**, then put
+`antibat-26.2.jar` in your `mods` folder. Minecraft requires **Java 25 or newer**.
+Fabric API and Architectury API are not required.
+
+Install the mod on the server for multiplayer, or on your client for
+single-player worlds. Multiplayer clients do not need the mod.
+
+## Development
+
+This project uses Fabric Loom 1.17.21 and the Gradle 9.6.0 wrapper. It targets
+Java 25 and Minecraft's unobfuscated classes; no mappings dependency is needed.
+The old Forge/Architectury modules have been replaced with a Fabric-only build.
+
+In IntelliJ IDEA, open the project root and select **Java 25 or newer** for both
+the Project SDK and **Settings → Build, Execution, Deployment → Build Tools →
+Gradle → Gradle JVM**. Use the project's Gradle wrapper and reload the Gradle
+project. The previous Temurin 19 setting must be updated.
+
+Build using Java 25 or newer:
+
+```sh
+bash ./gradlew build
+```
+
+The installable mod is `build/libs/antibat-26.2.jar`; the `-sources.jar` is for
+development only. On Windows, use `gradlew.bat build`.
+
+Launch a development client with `bash ./gradlew runClient`, or a development
+server with `bash ./gradlew runServer`. Server world files and logs are stored
+in `run/`; review Minecraft's EULA before enabling the development server.
